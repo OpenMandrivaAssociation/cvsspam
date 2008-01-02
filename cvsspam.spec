@@ -12,6 +12,7 @@ Source:		http://www.badgers-in-foil.co.uk/projects/cvsspam/releases/%{name}-%{ve
 URL:		http://www.badgers-in-foil.co.uk/projects/cvsspam/
 Requires:	cvs
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 CVSspam sends email when a change is committed to the CVS repository.
