@@ -41,3 +41,39 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/%{name}/%{name}.conf
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2.12-6mdv2011.0
++ Revision: 617486
+- the mass rebuild of 2010.0 packages
+
+* Wed Sep 02 2009 Thierry Vignaud <tv@mandriva.org> 0.2.12-5mdv2010.0
++ Revision: 425822
+- rebuild
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.2.12-4mdv2009.0
++ Revision: 243839
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.2.12-2mdv2008.1
++ Revision: 123613
+- kill re-definition of %%buildroot on Pixel's request
+- import cvsspam
+
+
+* Tue Aug 01 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.12-2mdv2007.0
+- %%mkrel
+
+* Fri Jul 22 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.12-1mdk 
+- New release 0.2.12
+- fix source URL
+
+* Sun Jun 12 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.11-2mdk 
+- fix config file location
+
+* Sun Jun 12 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.2.11-1mdk 
+- first mdk release
