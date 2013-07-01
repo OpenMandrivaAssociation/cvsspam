@@ -5,7 +5,7 @@
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Summary:	CVSspam emails you diffs when someone commits a change to your CVS repository
+Summary:	Emails you diffs when someone commits a change to your CVS repository
 License:	GPL
 Group:		System/Servers
 Source:		http://www.badgers-in-foil.co.uk/projects/cvsspam/releases/%{name}-%{version}.tar.bz2
