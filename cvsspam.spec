@@ -1,6 +1,6 @@
 %define name	cvsspam
 %define version 0.2.12
-%define release %mkrel 6
+%define release  7
 
 Name:		%{name}
 Version:	%{version}
@@ -12,7 +12,6 @@ Source:		http://www.badgers-in-foil.co.uk/projects/cvsspam/releases/%{name}-%{ve
 URL:		http://www.badgers-in-foil.co.uk/projects/cvsspam/
 Requires:	cvs
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 CVSspam sends email when a change is committed to the CVS repository.
@@ -24,7 +23,6 @@ possible.
 %setup -q
 
 %install
-rm -rf %{buildroot}
 
 install -d -m 755 %{buildroot}%{_bindir}
 install -m 755 *.rb %{buildroot}%{_bindir}
@@ -33,10 +31,8 @@ install -d -m 755 %{buildroot}%{_sysconfdir}/%{name}
 install -m 644 cvsspam.conf %{buildroot}%{_sysconfdir}/%{name}
 
 %clean
-rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc CREDITS TODO cvsspam-doc.pdf cvsspam-doc.html
 %{_bindir}/*
 %config(noreplace) %{_sysconfdir}/%{name}/%{name}.conf
