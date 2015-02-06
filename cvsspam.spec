@@ -1,6 +1,6 @@
 %define name	cvsspam
 %define version 0.2.12
-%define release  7
+%define release  8
 
 Name:		%{name}
 Version:	%{version}
